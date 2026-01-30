@@ -5,7 +5,7 @@ require('dotenv').config()
 
 // Database
 const sequelize = new Sequelize(
-  process.env.DATABASE_URL
+  process.env.DATABASE_URL,
   {
     dialect: 'postgres',
     dialectOptions: {
